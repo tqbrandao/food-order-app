@@ -4,7 +4,7 @@ import CartContext from "../../store/cart-context";
 import CartIcon from "../Cart/CartIcon";
 import classes from "./HeaderCartButton.module.css";
 
-const HeaderCardButton = (props) => {
+const HeaderCartButton = (props) => {
   const cartCtx = useContext(CartContext);
 
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
@@ -22,4 +22,4 @@ const HeaderCardButton = (props) => {
   );
 };
 
-export default HeaderCardButton;
+export default HeaderCartButton;
